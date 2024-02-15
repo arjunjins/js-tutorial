@@ -493,7 +493,7 @@ myPromise.then(
   function(error) { /* code if some error */ }  
 );
 ```
-
+[JS Promise API](https://javascript.info/promise-api)
 ## Asynchronous function
 Asynchronous functions in JavaScript allow you to execute code without blocking the execution of other code. This is particularly useful for tasks such as fetching data from a server, reading files, or waiting for user input, where the operation might take some time to complete. Rather than waiting for these operations to finish, asynchronous functions enable you to specify code that should execute after the operation completes, ensuring that your program remains responsive.
 
@@ -537,3 +537,23 @@ Here are some key concepts related to asynchronous functions in JavaScript:
    ```
 
 Asynchronous functions are crucial in JavaScript for handling tasks that involve waiting for external events or resources, ensuring that your code remains efficient and responsive. They are foundational for modern web development, especially in environments like Node.js and browser-based applications.
+
+## The localStorage Object
+
+The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+The data is stored with no expiration date, and will not be deleted when the browser is closed.
+The data will be available for days, weeks, and years.
+
+## The setItem() Method
+The localStorage.setItem() method stores a data item in a storage.
+It takes a name and a value as parameters, example : 
+```js
+localStorage.setItem("name", "John Doe");
+```
+## The getItem() Method
+
+The localStorage.getItem() method retrieves a data item from the storage.
+It takes a name as parameter, example:
+```js
+localStorage.getItem("name");
+```
