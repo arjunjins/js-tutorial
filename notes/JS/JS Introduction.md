@@ -557,3 +557,5 @@ It takes a name as parameter, example:
 ```js
 localStorage.getItem("name");
 ```
+
+# [[JS API]]
