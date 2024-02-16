@@ -23,7 +23,7 @@ async function postRequest() {
     age: 34,
   };
 
-  let response = await fetch("http://localhost:3000/", {
+  let response = await fetch("http://localhost:3000/submitDetails", {
     method: "POST",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
@@ -36,7 +36,10 @@ async function postRequest() {
   } else {
     console.log("Error" + response.status);
   }
-  console.log(response);
+  //console.log(response);
+
+  let result = await response.text();
+  console.log(result)
 }
 
 postRequest();
