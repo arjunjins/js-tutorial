@@ -26,6 +26,14 @@ app.post("/submitDetails", (req, res) => {
   res.send("Data received successfully!");
 });
 
+app.post("/submitFormData", (req, res) => {
+  const data = req.body;
+  console.log("Data recieved " + data);
+
+  // Process the data and send a response
+  res.send("Data received successfully!");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
